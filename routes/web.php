@@ -12,8 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('barudash');
 });
+
+Route::get('/dash', function () {
+    return view('barudash');
+});
+
 
 Auth::routes();
 
