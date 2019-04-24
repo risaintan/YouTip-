@@ -16,7 +16,7 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->float('amount');
+            $table->integer('keranjang_id')->unsigned();
             $table->string('ShipName', 100);
             $table->text('alamat');
             $table->string('kota', 50);
@@ -24,7 +24,7 @@ class CreateOrdersTable extends Migration
             $table->string('no_hp', 20);
             $table->string('buktitransfer', 100);
             $table->timestamps();
-            $table->datetime('tanggal_berakhir');
+            $table->foreign('keranjang_id')->references('id')->on('keranjang_belanja')->onDelete('CASCADE');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('CASCADE');
         });
     }
