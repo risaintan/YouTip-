@@ -1,5 +1,4 @@
-[Sekilas Tentang](#sekilas-tentang) | 
-:---:|:---:|:---:|:---:|:---:
+[Sekilas Tentang](#sekilas-tentang) 
 
 #Sekilas Tentang Youtip
 [`^ kembali ke atas ^`](#)
